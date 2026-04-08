@@ -1,0 +1,87 @@
+
+.counter-section {
+  position: relative;
+  width: 100%;
+  max-height: 320px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+.counter-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.532);
+  z-index: 1;
+}
+.counter-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  padding: 60px 0;
+}
+.counter-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 180px;
+}
+.counter-icon {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 18px;
+  filter: brightness(0) invert(1);
+}
+.counter-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  font-family: open Sans, sans-serif;
+  transition: color 0.2s;
+}
+.counter-label {
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-top: 6px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .counter-content {
+    gap: 40px;
+    padding: 40px 0;
+  }
+  .counter-item {
+    min-width: 120px;
+  }
+  .counter-icon {
+    width: 36px;
+    height: 36px;
+  }
+  .counter-number {
+    font-size: 2.1rem;
+  }
+}
+@media (max-width: 600px) {
+  .counter-content {
+    flex-direction: column;
+    gap: 32px;
+    padding: 30px 0;
+  }
+  .counter-item {
+    min-width: 0;
+  }
+} 

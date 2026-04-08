@@ -1,0 +1,430 @@
+.booking-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  min-height: 120px;
+  margin-top: 0;
+  font-family: Open Sans , serif;
+  background: #2ad2c9;
+}
+
+.booking-left {
+  background: none;
+  color:#2ad2c9;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 20%;
+  min-width: 320px;
+  position: relative;
+  clip-path: none;
+}
+
+.booking-title {
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  color: #ffffff;
+  
+  padding: 0 40px 0 0;
+ 
+  margin-left: 20px;
+}
+
+.booking-right {
+  background: none;
+  width: 50%;
+  display: flex;
+  
+  align-items: center;
+  justify-content: space-evenly;
+ 
+  padding: 0 0 0 40px;
+}
+
+.booking-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+ 
+  align-items: center;
+  width: 100%;
+  padding-right: 20px;
+}
+
+.booking-box {
+  border: 1.0px solid #fff;
+  box-sizing: border-box;
+  margin: 0;
+ 
+  flex: 1 1 0;
+  min-width: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.book-now-btn.booking-box {
+  padding: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+ 
+  border: 1.5px solid #fff;
+  background: #2ad2c9;
+  color: #fff;
+  transition: background 0.2s, color 0.2s;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.book-now-btn.booking-box:hover {
+ 
+  color: #2ad2c9;
+}
+
+@media (max-width: 1100px) {
+  .booking-section {
+    flex-direction: column;
+  }
+  .booking-left, .booking-right {
+    width: 100%;
+    min-width: unset;
+    clip-path: none;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+  }
+  .booking-title {
+    padding: 24px 0 0 0;
+    font-size: 1rem;
+  }
+  .booking-form {
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .booking-form {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 8px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .booking-box, .arrival-date-box, .departure-date-box, .rooms-select-box {
+    display: flex !important;
+    
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .booking-section {
+    padding: 0 2px;
+    min-height: 60px;
+  }
+  .booking-title {
+    font-size: 0.8rem;
+    padding: 4px 0 0 0;
+  }
+  .booking-form {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 4px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .booking-right {
+    overflow: visible;
+    padding: 0;
+  }
+  .booking-box, .arrival-date-box, .departure-date-box, .rooms-select-box {
+    display: flex !important;
+   
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+  }
+  .book-now-btn.booking-box {
+    font-size: 0.7rem;
+    height: 32px;
+    min-width: 0;
+   
+    padding: 0 4px;
+    margin: 0;
+  }
+  .calendar-icon svg {
+    width: 14px;
+    height: 14px;
+  }
+  .arrival-label, .departure-label, .rooms-label {
+    font-size: 0.7rem;
+  }
+}
+
+.arrival-date-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #2ad2c9;
+  color: #fff;
+  padding: 18px 24px;
+  
+  width: 230px;
+  height: 60px;
+  font-size: 1.3rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.arrival-label {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.calendar-icon {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.arrival-date-box svg {
+  display: block;
+  width: 28px;
+  height: 28px;
+}
+
+
+.calendar-popup {
+  background: #fff;
+  border: 1px solid #2ad2c9;
+ 
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  padding: 12px 16px;
+  min-width: 220px;
+  margin-top: 4px;
+}
+.calendar-header {
+  text-align: center;
+  font-weight: bold;
+  color: #2ad2c9;
+  margin-bottom: 8px;
+}
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+.calendar-dow {
+  font-size: 0.9em;
+  color: #888;
+  text-align: center;
+}
+.calendar-day {
+  text-align: center;
+  padding: 6px 0;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.calendar-day:hover {
+  background: #2ad2c9;
+  color: #fff;
+}
+
+.second-div {
+  display: flex;
+  gap: 32px;               
+  flex-wrap: wrap;
+  max-width: 700px;
+  padding: 40px;           
+  margin: 42px auto;
+  background: #2ad2c9;
+ 
+  box-sizing: border-box;
+  justify-content: center;  
+  align-items: center;     
+  min-height: 140px;      
+}
+
+.second-div > .booking-box,
+.second-div > .arrival-date-box,
+.second-div > .departure-date-box,
+.second-div > .rooms-select-box {
+  flex: 1 1 180px;         
+  max-width: 220px;        
+  min-width: 150px;
+  height: 56px;            
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+.departure-date-box, .rooms-select-box {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+  font-size: 1.15rem;
+  font-weight: 500;
+  width: 210px;
+  height: 54px;
+  padding: 0 18px;
+  box-sizing: border-box;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.departure-date-box .departure-label {
+  flex-shrink: 1;
+  min-width: 0;
+  font-weight: bold;
+  
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.departure-date-box .calendar-icon {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .departure-date-box, .rooms-select-box {
+    font-size: 0.7rem;
+    height: 36px;
+    min-width: 80px;
+    padding: 0 6px;
+  }
+  .departure-date-box .calendar-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+  .departure-date-box .departure-label {
+    font-size: 0.8rem;
+  }
+}
+
+.departure-label, .rooms-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.departure-date-box svg,
+.rooms-select-box svg {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.rooms-dropdown {
+  background: #fff;
+  border: 1px solid #2ad2c9;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  padding: 4px 0;
+  min-width: 180px;
+  margin-top: 4px;
+  position: absolute;
+  z-index: 1000;
+}
+.rooms-option {
+  padding: 10px 20px;
+  color: #2ad2c9;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  text-align: left;
+}
+.rooms-option:hover {
+  background: #2ad2c9;
+  color: #fff;
+}
+
+.book-now-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.book-now-btn {
+  width: 210px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #fff;
+  background: #2ad2c9;
+  border: 2px solid #2ad2c9;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.book-now-btn:hover {
+  background: #fff;
+  color: #2ad2c9;
+  border: 2px solid #2ad2c9;
+}
+
+.arrival-date-box,
+.departure-date-box,
+.rooms-select-box,
+.book-now-btn {
+  height: 40px !important;
+}
+
+.booking-box, .arrival-date-box, .departure-date-box, .rooms-select-box {
+  min-height: 24px !important;
+  font-size: 1rem !important;
+}
+
+.arrival-date-box, .departure-date-box, .rooms-select-box {
+  padding: 8px 12px !important;
+  width: 160px !important;
+}
+
+.calendar-icon img {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+.booking-form, .booking-right, .booking-section {
+  overflow: visible !important;
+}
+
+.calendar-icon img {
+  filter: brightness(0) invert(1);
+}
+
+.rooms-select-box .dropdown-icon img {
+  filter: brightness(0) invert(1);
+}
+
+.booking-box, .arrival-date-box, .departure-date-box, .rooms-select-box {
+  font-size: 0.81rem !important;
+}
+
+.arrival-label, .departure-label, .rooms-label {
+  font-size: 0.85rem !important;
+}
+
+
+ 
+

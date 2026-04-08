@@ -1,0 +1,206 @@
+.welcome-section {
+  text-align: center;
+  margin: 60px 0 40px 0;
+  font-family: Open Sans , serif;
+}
+
+.welcome-section h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.welcome-section .highlight {
+  color: #2ad2c9;
+}
+
+
+
+
+.welcome-desc {
+  font-size: 1.2rem;
+  color: #444;
+  max-width: 100%;
+  margin: 0 auto 50px auto;
+  line-height: 1.5;
+ 
+  margin-top: 70px;
+  
+}
+
+
+
+.features-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  
+}
+
+.feature-circle.enhanced {
+  position: relative;
+  width: 270px;
+  height: 270px;
+  border: 1px solid #2ad2c9;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, border 0.3s;
+}
+
+.feature-circle.enhanced .feature-icon-bubble {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  width: 48px;
+  height: 48px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: background 0.3s, border 0.3s;
+}
+
+.feature-circle.enhanced .feature-icon-bubble img {
+  width: 20px;
+  height: 20px;
+}
+
+
+
+.feature-circle.enhanced .feature-content {
+  text-align: center;
+}
+
+.feature-circle.enhanced .feature-title {
+  font-size: 1.3rem;
+  color: #222;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+  transition: color 0.3s, font-weight 0.3s;
+}
+
+.feature-circle.enhanced .feature-desc {
+  font-size: 1.0rem;
+  color: #222;
+  font-weight: 100;
+  font-family: Tiny;
+  line-height: 1.2;
+  transition: color 0.3s, font-weight 0.3s;
+}
+
+.feature-circle.enhanced:hover {
+  background: #2ad2c9;
+  border-color: #2ad2c9;
+}
+
+.feature-circle.enhanced:hover .feature-icon-bubble {
+  background: #fff;
+  border: 2px solid #2ad2c9;
+}
+
+.feature-circle.enhanced:hover .feature-title,
+.feature-circle.enhanced:hover .feature-desc {
+  color: #fff;
+  font-weight: 700;
+}
+
+
+
+.circleIcon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  gap: 100px;
+}
+
+@media (max-width: 900px) {
+  .welcome-section h1 {
+    font-size: 2.1rem;
+    letter-spacing: 1px;
+  }
+  .feature-circle.enhanced {
+    width: 200px;
+    height: 200px;
+  }
+  .feature-circle.enhanced .feature-icon-bubble {
+    width: 36px;
+    height: 36px;
+    top: 8px;
+    right: 10px;
+  }
+  .feature-circle.enhanced .feature-icon-bubble img {
+    width: 16px;
+    height: 16px;
+  }
+  .circleIcon {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .welcome-section {
+    margin: 30px 0 20px 0;
+  }
+  .welcome-section h1 {
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+  .welcome-desc {
+    font-size: 0.9rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .feature-circle.enhanced {
+    width: 120px;
+    height: 120px;
+    min-width: 100px;
+    min-height: 100px;
+  }
+  .feature-circle.enhanced .feature-icon-bubble {
+    width: 22px;
+    height: 22px;
+    top: 4px;
+    right: 4px;
+  }
+  .feature-circle.enhanced .feature-icon-bubble img {
+    width: 10px;
+    height: 10px;
+  }
+  .feature-circle.enhanced .feature-title {
+    font-size: 0.7rem;
+    margin-bottom: 4px;
+  }
+  .feature-circle.enhanced .feature-desc {
+    font-size: 0.7rem;
+  }
+  .circleIcon {
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .features-row {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+}
+
+
+
+
+
+

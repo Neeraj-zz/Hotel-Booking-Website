@@ -1,0 +1,120 @@
+.services-section {
+  width: 100%;
+  background:white;
+  padding: 40px 0 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.services-title {
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.services-separator {
+  margin-bottom: 36px;
+  size: 15px;
+}
+
+.services-cards-wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  width: 300px;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-bottom: 24px;
+  transition: box-shadow 0.2s;
+}
+
+
+.service-card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.service-card-content {
+  padding: 32px 28px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.service-card-title {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #222;
+  font-family: 'Open Sans',serif;
+}
+
+.service-card-underline {
+  width: 48px;
+  height: 2px;
+  background: #19c2b2;
+  margin-bottom: 16px;
+}
+
+.service-card-desc {
+  font-size: 0.8rem;
+  color: #444;
+  font-family: 'Open Sans',serif;
+  margin-bottom: 32px;
+}
+
+.service-card-readmore {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #222;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Open Sans',serif;
+  transition: color 0.2s;
+}
+
+.service-card-readmore::after {
+  content: "\2192";
+  color: #19c2b2;
+  font-size: 1.2em;
+  margin-left: 8px;
+}
+
+@media (max-width: 1200px) {
+  .services-cards-wrapper {
+    gap: 24px;
+  }
+  .service-card {
+    width: 320px;
+  }
+}
+
+@media (max-width: 900px) {
+  .services-cards-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .service-card {
+    width: 90vw;
+    max-width: 400px;
+  }
+}

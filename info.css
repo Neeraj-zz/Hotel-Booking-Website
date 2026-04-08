@@ -1,0 +1,52 @@
+*{
+  padding: 0;
+  margin: 0;
+   box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-bar{
+  background-color: #31cec3;
+  display: flex;
+  justify-content: space-evenly;
+font-family: Open Sans,serif;
+max-height: 60px;
+  flex-wrap: wrap;
+  padding: 10px;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.info-Ul{
+  display: flex;
+     filter: brightness(0) invert(1);
+     padding-right: 90px;
+    
+    
+
+  gap: 10px;
+  flex-wrap: wrap;
+  
+}
+
+
+.info-Ul li{
+  display: flex;
+gap: 10px;
+  padding: 10px;
+ align-items: center;
+ 
+  
+}
+
+
+
+
+
+
+.header{
+  display: flex;
+}

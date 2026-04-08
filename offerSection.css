@@ -1,0 +1,194 @@
+
+.rooms-offer-section {
+  max-width: 1400px;
+  margin: 60px auto 0 auto;
+  padding: 40px 20px;
+  background: #fff;
+  border-radius: 12px;
+}
+.rooms-offer-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+.rooms-offer-separator {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  
+}
+.rooms-offer-separator img {
+  height: 24px;
+}
+.rooms-offer-slider-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.rooms-offer-cards {
+  display: flex;
+  gap: 32px;
+}
+.room-offer-card {
+  background: #fafafa;
+  
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  overflow: hidden;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  transition: box-shadow 0.2s;
+}
+.room-offer-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+.room-offer-img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+.room-offer-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.room-offer-img-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(254, 250, 5, 0.266);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.room-offer-img-wrapper:hover .room-offer-img-overlay {
+  opacity: 1;
+}
+.room-offer-plus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 2rem;
+  background: rgba(255,255,255,0.1);
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.room-offer-info {
+  padding: 32px 24px 28px 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.room-offer-info h3 {
+  font-size: 1.0rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #222;
+  font-family: Aquarium;
+}
+.room-offer-info p {
+  font-size: .8rem;
+  font-family: Tiny;
+  color: #444;
+  margin-bottom: 18px;
+}
+.room-offer-price {
+  font-size: 0.8rem;
+  color: #19c2b2;
+  font-style: italic;
+  margin-bottom: 22px;
+}
+.room-offer-price span {
+  color: #19c2b2;
+  font-weight: 600;
+}
+.room-offer-btn {
+  padding: 10px 0;
+  background: #fff;
+  border: 2px solid #19c2b2;
+  
+  color: #19c2b2;
+  font-weight: bold;
+  font-size: .8rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  width: 40%;
+}
+.room-offer-btn:hover {
+  background: #19c2b2;
+  color: #fff;
+}
+.rooms-offer-arrow {
+  background: #fff;
+  border: 2px solid #19c2b2;
+  color: #19c2b2;
+  border-radius: 4px;
+  width: 28px;
+  height: 38px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  user-select: none;
+}
+.rooms-offer-arrow:hover {
+  background: #19c2b2;
+  color: #fff;
+}
+@media (max-width: 1200px) {
+  .room-offer-card {
+    width: 300px;
+  }
+  .room-offer-card img {
+    height: 180px;
+  }
+}
+@media (max-width: 1000px) {
+  .rooms-offer-cards {
+    gap: 16px;
+  }
+  .room-offer-card {
+    width: 220px;
+  }
+  .room-offer-card img {
+    height: 120px;
+  }
+}
+@media (max-width: 800px) {
+  .rooms-offer-slider-wrapper {
+    flex-direction: column;
+  }
+  .rooms-offer-cards {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .room-offer-card {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+} 
+
+
+.rooms-offer-separator img{
+ 
+  height: 15px;
+}

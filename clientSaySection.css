@@ -1,0 +1,140 @@
+.client-say-section {
+  width: 100%;
+  background:white;
+  padding: 40px 0 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.client-say-title {
+  font-size: 2.6rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.client-say-separator {
+  margin-bottom: 36px;
+}
+
+.client-say-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1600px;
+  gap: 12px;
+}
+
+.client-say-arrow {
+  width: 50px;
+  height: 30px;
+  border: 2px solid #19c2b2;
+  background: #fff;
+  color: #222;
+
+margin-left: 150px;
+margin-right: 150px;
+  font-size: 2rem;
+  
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s;
+}
+.client-say-arrow:hover {
+  background: #19c2b2;
+  color: #fff;
+}
+
+.client-say-cards-wrapper {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  justify-content: center;
+}
+
+.client-say-card {
+  background: #fff;
+  border: 2px solid #19c2b2;
+  border-radius: 2px;
+  width: 600px;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 48px 40px 32px 40px;
+  position: relative;
+  margin: 0 12px;
+  box-sizing: border-box;
+  transition: box-shadow 0.2s;
+}
+
+.client-say-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  position: absolute;
+  top: -60px;
+  left: 40px;
+  background: #fff;
+}
+
+.client-say-content {
+  margin-top: 60px;
+}
+
+.client-say-quote {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 24px;
+  font-family: 'Open Sans', serif;
+}
+
+.client-say-name {
+  font-size: 1.1rem;
+  color: #222;
+  font-family: 'Open Sans', serif;
+}
+
+.client-say-title {
+  font-size: 1rem;
+  color: #444;
+  font-weight: 400;
+  margin-left: 8px;
+}
+
+@media (max-width: 1300px) {
+  .client-say-card {
+    width: 400px;
+    padding: 32px 20px 24px 20px;
+  }
+  .client-say-img {
+    left: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .client-say-cards-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .client-say-card {
+    width: 90vw;
+    max-width: 400px;
+    margin: 0;
+  }
+  .client-say-img {
+    left: 20px;
+  }
+  .client-say-carousel {
+    gap: 12px;
+  }
+} 

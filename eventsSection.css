@@ -1,0 +1,126 @@
+.events-section {
+  width: 100%;
+  background: #fff;
+  padding: 60px 0 40px 0;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.events-header {
+  margin-bottom: 32px;
+}
+.events-subtitle {
+  color: #888;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.events-title {
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  font-family: Open Sans , serif;
+}
+.events-separator {
+  margin: 0 auto 42px auto;
+  height: 10px;
+}
+.events-cards-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+.event-card {
+  background: #fff;
+ 
+  
+  width: 300px;
+  overflow: hidden;
+  text-align: left;
+  transition: box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+.event-card:hover {
+  box-shadow: 0 4px 24px rgba(25,194,178,0.18);
+}
+.event-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.event-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.event-date {
+  position: absolute;
+  top: 12px;
+  right: 22px;
+  width: 46px;
+
+  
+  overflow: hidden;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+.event-day {
+  background: #fff;
+  color: #19c2b2;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.1;
+  padding: 6px 0 2px 0;
+  text-align: center;
+  
+}
+.event-month {
+  background: #19c2b2;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 6px 0 4px 0;
+  text-align: center;
+  font-family: Open Sans , serif;
+ 
+}
+.event-info {
+  padding: 24px 24px 16px 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.event-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #222;
+  font-family: Open Sans , serif;
+}
+.event-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #19c2b2;
+  font-size: 12px;
+  margin-bottom: 16px;
+  font-family: Tiny;
+}
+.event-detail-link {
+  color: #000000;
+  font-size: 13px;
+  text-decoration: none;
+  font-style: italic;
+  margin-top: 8px;
+  transition: color 0.2s;
+  font-family: Open Sans , serif;
+}
+.event-detail-link:hover {
+  color: #0e8a7e;
+  text-decoration: underline;
+} 

@@ -1,0 +1,16 @@
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+}
+
+
+a:hover{
+    color:#31CEC3 !important;
+    text-decoration: underline !important;
+}
+
+
+.about-banner-breadcrumb a {
+    color: white ;
+}

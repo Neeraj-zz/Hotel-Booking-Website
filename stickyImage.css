@@ -1,0 +1,139 @@
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  flex-direction: column;
+  gap: 15px;
+
+  text-align: center;
+  padding: 0;
+
+}
+
+
+
+
+.heading-items {
+  display: flex;
+  margin: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  gap: 80px;
+  margin-top: 50px;
+  font-family: Open Sans ,serif;
+  
+  position: sticky;
+
+
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.home:hover {
+  text-decoration: underline;
+  color: #31cec3;
+  transition: color 0.6s;
+  text-underline-offset: 10px;
+
+}
+
+.about:hover {
+  text-decoration: underline;
+  color: #31cec3;
+  transition: color 0.6s;
+  text-underline-offset: 10px;
+
+}
+
+.services:hover {
+  text-decoration: underline;
+  color: #31cec3;
+  transition: color 0.6s;
+  text-underline-offset: 10px;
+}
+
+.gallery:hover {
+  text-decoration: underline;
+  color: #31cec3;
+  transition: color 0.6s;
+  text-underline-offset: 10px;
+}
+
+.pages:hover {
+  text-decoration: underline;
+  color: #31cec3;
+  transition: color 0.6s;
+  text-underline-offset: 10px;
+}
+
+.contact:hover {
+  text-decoration: underline;
+  color: #31cec3;
+  transition: color 0.6s;
+  text-underline-offset: 10px;
+}
+
+.room:hover {
+  text-decoration: underline;
+  color: #31cec3;
+  transition: color 0.6s;
+  text-underline-offset: 10px;
+}
+
+.image {
+  margin-top: 50px;
+}
+
+.heading {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  height: 60px;
+  transition: height 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.heading.sticky {
+  height: 110px;
+}
+
+@media (max-width: 900px) {
+  .heading {
+    height: 50px;
+  }
+  .heading-items {
+    gap: 16px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .heading {
+    height: 38px;
+    min-height: 38px;
+    padding: 0 4px;
+  }
+  .heading-items {
+    gap: 6px;
+    font-size: 0.7rem;
+    flex-wrap: wrap;
+  }
+  .heading-items li {
+    padding: 0 2px;
+  }
+}

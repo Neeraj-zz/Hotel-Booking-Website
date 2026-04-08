@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MaxHotel Home - 1</title>
+
+    <link rel="stylesheet" href="info.css" />
+    <link rel="stylesheet" href="social.css" />
+    <link rel="stylesheet" href="stickyImage.css" />
+    <link rel="stylesheet" href="slide.css" />
+    <link rel="stylesheet" href="dateBanner.css" />
+    <link rel="stylesheet" href="bookingBox.css" />
+    <link rel="stylesheet" href="welcomeSection.css" />
+    <link rel="stylesheet" href="chooseSection.css" />
+    <link rel="stylesheet" href="offerSection.css" />
+    <link rel="stylesheet" href="counterSection.css" />
+    <link rel="stylesheet" href="gallerySection.css" />
+    <link rel="stylesheet" href="maxBannerSection.css" />
+    <link rel="stylesheet" href="clientsSection.css" />
+    <link rel="stylesheet" href="eventsSection.css" />
+    <link rel="stylesheet" href="footerSection.css" />
+    <link rel="stylesheet" href="aboutBanner.css" />
+    <link rel="stylesheet" href="hover.css">
+    <script src="offerSection.js" defer></script>
+    <script src="counterSection.js" defer></script>
+    <script src="gallerySection.js" defer></script>
+    <script src="maxBannerSection.js" defer></script>
+    <script src="clientsSection.js" defer></script>
+    <script src="eventsSection.js" defer></script>
+    <script src="footerSection.js" defer></script>
+
+    <script src="action.js" defer></script>
+    <script src="dateBanner.js" defer></script>
+    <script src="arrivalDatePicker.js" defer></script>
+    <script src="roomsSelect.js" defer></script>
+  </head>
+
+  <body>
+    <nav class="nav-bar">
+      <div class="header">
+      
+
+        <div class="info-div">
+          <ul class="info-Ul">
+            <li>
+              <img
+                src="images/location.png"
+                alt="location"
+                width="20px"
+                height="15px"
+              />
+              <p><b>35, East St, New York, USA</b></p>
+            </li>
+            <li>
+              <img
+                src="images/telephone.png"
+                alt="phone"
+                width="20px"
+                height="15px"
+              />
+              <p>
+                <b
+                  ><a href="tel:(+01)1234567890" title="phone" class="phone">
+                    (+01)123 456 7890</a
+                  ></b
+                >
+              </p>
+            </li>
+          </ul>
+        </div>
+
+      
+
+
+        <div class="social-div">
+          <ul class="social-Ul">
+            <li><b>Follow us</b></li>
+            <li>
+              <img src="images/twitter.png" alt="" width="20px" height="20px" />
+            </li>
+            <li>
+              <img
+                src="images/facebook.png"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+            </li>
+            <li>
+              <img
+                src="images/google-plus.png"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+            </li>
+            <li>
+              <img
+                src="images/linkedin.png"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+            </li>
+            <li>
+              <img
+                src="images/tripadvisor.png"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+            </li>
+          </ul>
+        </div>
+
+       
+      </div>
+    </nav>
+
+    
+
+    
+    <div class="brand">
+      <div class="image">
+        <img src="images/logo.png" alt="Company Name" />
+      </div>
+
+    </div>
+    <div class="heading">
+      <ul class="heading-items">
+        <li class="home"><b><a href="index.html">Home</a></b></li>
+      <li class="about"><b><a href="about.html">About us</a></b></li>
+      <li class="room"><b><a href="room.html">Rooms</a></b></li>
+      <li class="services"><b><a href="service.html">Services</a></b></li>
+      <li class="gallery"><b><a href="gallery.html">Gallery</a></b></li>
+      <li class="pages"><b><a href="page.html">Pages</a></b></li>
+      <li class="contact"><b><a href="contact.html">Contact</a></b></li>
+      </ul>
+    </div>
+
+
+<!-- banner for gallery page only  -->
+
+    <div class="about-banner-section" style="background-image: url('images/gallerysingle-banner.jpg');">
+        <div class="about-banner-overlay">
+          <div class="about-banner-content">
+            <h1 class="about-banner-title">GALLERY</h1>
+            <div class="about-banner-breadcrumb"><a href="index.html">HOME</a> / GALLERY</div>
+          </div>
+        </div>
+      </div>
+      <!-- banner for gallery page only  -->
+
+    <!-- gallery for gallery page only  -->
+    <div class="single-gallery-section">
+      <div class="single-gallery-main">
+        <img id="single-gallery-main-img" src="images/single/large-thumb.jpg" alt="Main Gallery" />
+      </div>
+      <div class="single-gallery-row">
+        <img class="single-gallery-thumb" src="images/single/thumb-1.jpg" alt="Thumb 1" data-index="0" />
+        <img class="single-gallery-thumb" src="images/single/thumb-2.jpg" alt="Thumb 2" data-index="1" />
+        <img class="single-gallery-thumb" src="images/single/thumb-3.jpg" alt="Thumb 3" data-index="2" />
+        <button class="single-gallery-arrow" id="single-gallery-next">&#62;</button>
+      </div>
+      <div class="single-gallery-info-desc">
+        <div class="single-gallery-info-box">
+          <table>
+            <tr><td>Place Name</td><td>:</td><td>Beach View</td></tr>
+            <tr><td>Location</td><td>:</td><td>Victoria, USA</td></tr>
+            <tr><td>Captured By</td><td>:</td><td>John Smith</td></tr>
+            <tr><td>Date</td><td>:</td><td>May 26, 2016</td></tr>
+            <tr><td>Entrance Rate</td><td>:</td><td>$100</td></tr>
+          </table>
+        </div>
+        <div class="single-gallery-description">
+          <h3>INFORMATION</h3>
+          <p id="single-gallery-info-text">Why do we always come here? I guess we'll never know. It's like a kind of torture to have to watch the show. As long as we live it's you and me baby. There ain't nothin' wrong with that. Today still wanted by the government they survive as soldiers of fortune. Just two good ol' boys. Never meanin' no harm. Beats all you've ever saw been in trouble with the law since the day they was born. The first mate and his Skipper too will do their very best to make the others comfortable in their tropic island nest. Didn't need no welfare states. Everybody pulled his weight.</p>
+        </div>
+      </div>
+      <div class="single-gallery-desc-section">
+        <h3>DESCRIPTION</h3>
+        <p>Baby if you've ever wondered - wondered whatever became of me. I'm living on the air in Cincinnati. Cincinnati WKRP. Their house is a museum where people come to see 'em. They really are a scream the Addams Family! Sunny Days sweepin' the clouds away. On my way to where the air is sweet. Can you tell me how to get how to get to Sesame Street. I have always wanted to have a neighbor just like you. I've always wanted to live in a neighborhood with you. In 1972 a crack commando unit was sent to prison by a military court for a crime they didn't commit.</p>
+        <p>These men promptly escaped from a maximum security stockade to the Los Angeles underground. Believe it or not I'm walking on air. I never thought I could feel so free? Well we're movin' on up to the east side to a deluxe apartment in the sky. Why do we always come here? I guess we'll never know. Its like a kind of torture to have to watch the show! It's a beautiful day in this neighborhood a beautiful day for a neighbor. Would you be mine? Could you be mine? It's a neighborly day in this beautywood a neighborly day for a beauty. Would you be mine? Could you be mine?</p>
+      </div>
+    </div>
+    <!-- gallery for gallery page only  -->
+
+
+    <footer class="footer-section">
+      <div class="footer-container">
+        <div class="footer-col about">
+          <h3 class="footer-title">ABOUT OUR MAX</h3>
+          <div class="footer-underline"></div>
+          <p class="footer-about-text">That this group would somehow form a family that's the way we all became the Brady
+            Bunch. Doin' it our way. There's nothing we wont try never heard word.</p>
+          <div class="footer-social-icons">
+            <a href="#" class="footer-social-btn"><img src="images/facebook.png" alt="Facebook" /></a>
+            <a href="#" class="footer-social-btn"><img src="images/twitter.png" alt="Twitter" /></a>
+            <a href="#" class="footer-social-btn"><img src="images/google-plus.png" alt="Google Plus" /></a>
+            <a href="#" class="footer-social-btn"><img src="images/linkedin.png" alt="LinkedIn" /></a>
+          </div>
+        </div>
+        <div class="footer-col links">
+          <h3 class="footer-title">USEFUL LINKS</h3>
+          <div class="footer-underline"></div>
+          <ul class="footer-links-list">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Our Packages</a></li>
+            <li><a href="#">Popular Destination</a></li>
+            <li><a href="#">Top Destination</a></li>
+            <li><a href="#">Latest News</a></li>
+            <li><a href="#">Our Gallery</a></li>
+          </ul>
+        </div>
+        <div class="footer-col hours">
+          <h3 class="footer-title">OPENING HOURS</h3>
+          <div class="footer-underline"></div>
+          <ul class="footer-hours-list">
+            <li><span>Monday</span> - <span>9:00AM to 6:00PM</span></li>
+            <li><span>Tuesday</span> - <span>9:00AM to 6:00PM</span></li>
+            <li><span>Wednesday</span> - <span>9:00AM to 6:00PM</span></li>
+            <li><span>Thursday</span> - <span>9:00AM to 6:00PM</span></li>
+            <li><span>Friday</span> - <span>9:00AM to 6:00PM</span></li>
+            <li><span>Saturday</span> - <span>9:00AM to 6:00PM</span></li>
+          </ul>
+        </div>
+        <div class="footer-col popular">
+          <h3 class="footer-title">POPULAR DESTINATION</h3>
+          <div class="footer-underline"></div>
+          <div class="footer-popular-grid">
+            <img src="images/footer/desti-1.jpg" alt="Popular 1" class="footer-popular-img" />
+            <img src="images/footer/desti-2.jpg" alt="Popular 2" class="footer-popular-img" />
+            <img src="images/footer/desti-3.jpg" alt="Popular 3" class="footer-popular-img" />
+            <img src="images/footer/desti-4.jpg" alt="Popular 4" class="footer-popular-img" />
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copyright">© 2016 ALL RIGHTS RESERVED</div>
+        <ul class="footer-nav">
+          <li class="home"><b><a href="structure.html">Home</a></b></li>
+          <li class="about"><b><a href="about.html">About us</a></b></li>
+          <li class="room"><b><a href="room.html">Rooms</a></b></li>
+          <li class="services"><b><a href="service.html">Services</a></b></li>
+          <li class="gallery"><b><a href="gallery.html">Gallery</a></b></li>
+          <li class="pages"><b><a href="page.html">Pages</a></b></li>
+          <li class="contact"><b><a href="contact.html">Contact</a></b></li>
+        </ul>
+      </div>
+    </footer>
+
+
+    </body>
+    </html>
